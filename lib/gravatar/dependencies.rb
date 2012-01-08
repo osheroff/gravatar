@@ -1,5 +1,5 @@
 if defined?(Rails) and Rails::VERSION::STRING < '3.0.0'
-  Rails.configuration.gem "sc-core-ext", ">= 1.2.0"
+  Rails.configuration.gem "sc-core-ext", :version => ">= 1.2.0"
 elsif !defined?(Gem)
   require 'rubygems'
   gem 'activesupport', '>= 2.3.5'
